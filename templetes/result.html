@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>this passage has {{word_count}} words</h1>
+<a href="{% url 'home' %}">clik here for home</a>
+<br></br>
+<!--{{age}}-->
+{{article}}
+<br></br>
+<br></br>
+{{dict_word}}
+<br></br>
+</h1>total word</h1>
+{% for word, num in dict_word %}
+    </h1>{{word}}:{{num}}g</h1>
+{% endfor %}
+</body>
+</html>
